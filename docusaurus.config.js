@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Character Studio',
-  tagline: 'Avatar Creation and More',
+  tagline: 'VRM Avatar Toolkit',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
