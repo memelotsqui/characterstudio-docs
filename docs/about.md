@@ -2,7 +2,7 @@
 sidebar_position: 1                                                                                                                                  
 --- 
 
-# About Character Studio
+# About
 
 
 An evolving and truely open 3D studio for making and optimizing glTF / VRM avatars with. Make and manage your own avatar, avatar builder app, or to create an avatar collection.
