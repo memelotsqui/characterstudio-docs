@@ -32,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} Docs`}
-      description="Description will go into a meta tag in <head />">
+      title={`Docs`}
+      description="Open source web based VRM avatar builder and optimization app with support for batch processing">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
