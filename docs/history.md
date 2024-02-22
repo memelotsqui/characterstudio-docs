@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 
-# History of Character Studio
+# History
 
 
 This project stands on the shoulders of giants with years of history from open source hackers and web3 enthusiasts.

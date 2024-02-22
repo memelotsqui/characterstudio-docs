@@ -1,4 +1,4 @@
-# Processing Assets
+# Preparing Your Assets
 
 After cloning and installing [Character Studio](https://github.com/m3-org/CharacterStudio), you will want to then copy your assets into the public folder and check the `.env` variable to ensure it's configured to the right location.
 

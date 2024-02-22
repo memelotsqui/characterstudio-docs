@@ -1,11 +1,13 @@
----                                                                                                                                                  
-sidebar_position: 1                                                                                                                                  
+---                                                                                                                                  
+sidebar_position: 1                                                                                                                              
+toc_min_heading_level: 2
 --- 
 
 # About
 
 
-An evolving and truely open 3D studio for making and optimizing glTF / VRM avatars with. Make and manage your own avatar, avatar builder app, or to create an avatar collection.
+An evolving and truely open 3D studio for making and optimizing VRM avatars and/or create a customized avatar builder app using your own assets.
+
 
 ![](https://i.imgur.com/v2zJEiy.gif)
 
@@ -26,7 +28,6 @@ An evolving and truely open 3D studio for making and optimizing glTF / VRM avata
     - Recently refactored to NOT need React as a dependency
     - Logic is now all inside `CharacterManager` class
 
-
 ## Motivation
 
 Character creation defines the initial user experience of many open-world games. In a way crafting your 3D avatar represents the future evolution of setting up a social media profile. Today if people that want to create their own unique 3D avatar and lack maybe the time or skills to make one from scratch they have excellent options such as [VRoid Studio](https://vroid.com/en/studio) and [Ready Player Me](https://readyplayer.me/).
@@ -34,7 +35,6 @@ Character creation defines the initial user experience of many open-world games.
 As advocates for collaborative research, we recognized a significant gap in the market: existing [avatar creation tools](https://hackmd.io/@XR/avatarbuilders) are often closed-source, limiting users' ability to study, improve, or customize the process. To address this limitation, we've dedicated the last couple years to provide an open-source alternative.
 
 The people behind this project actively contribute in groups like [M3](https://m3org.com), [Metaverse Standards Forum](https://metaverse-standards.org/), and[ OMI group](https://omigroup.org/), which all focus on pushing interoperable open standards forward. Our goal is to find ways to compliment existing efforts in improving the digital avatar and wearables ecosystem. Transparency fosters trust, minimizes bias, and empowers users to fully engage in the development process.
-
 
 
 ## Installation
@@ -54,10 +54,6 @@ yarn install
 yarn run dev
 ```
 
-
-
 ## FAQ
-
-
 
 Whether you're an artist or developer come join [M3 discord](https://m3org.com/discord) and introduce yourself and maybe share know what you're working on. As makers that build across many different platforms and game engines we all have a shared interest in interoperability.
