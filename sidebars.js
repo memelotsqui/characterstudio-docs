@@ -1,7 +1,7 @@
 const sidebars = {
   tutorialSidebar: [
     'about',
-    'installation',
+    'quickstart',
     'history',
     {
       type: 'category',
@@ -55,7 +55,8 @@ const sidebars = {
             'Developers/Pages/save',
             'Developers/Pages/view',
           ]
-        }
+        },
+        'Developers/sdk',
       ]
     }
   ]
