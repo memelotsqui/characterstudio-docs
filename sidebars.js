@@ -30,6 +30,7 @@ const sidebars = {
             'Modders/manifest-files/character-select',
             'Modders/manifest-files/character-traits',
             'Modders/manifest-files/vrm-to-lora',
+            'Modders/manifest-files/vrm-to-spritesheet',
             'Modders/manifest-files/ai-personalities',
             'Modders/manifest-files/generate-manifest-files',
           ]
@@ -46,7 +47,10 @@ const sidebars = {
           collapsed: true,
           items: [
             'Developers/Pages/appearance',
+            'Developers/Pages/batch-download',
+            'Developers/Pages/batch-manifest',
             'Developers/Pages/bio',
+            'Developers/Pages/claim',
             'Developers/Pages/create',
             'Developers/Pages/landing',
             'Developers/Pages/load',
@@ -54,6 +58,7 @@ const sidebars = {
             'Developers/Pages/optimizer',
             'Developers/Pages/save',
             'Developers/Pages/view',
+            'Developers/Pages/wallet',
           ]
         },
         'Developers/sdk',

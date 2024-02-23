@@ -12,6 +12,46 @@ Specifically this part automates the part of gathering screenshots and tagging t
 
 ![Screenshot from 2024-02-14 12-17-25](/img/SkXX5KWnp.png)
 
+This is what all the text files from the output look like, the screenshots and associated text is all configurable via the manifest file:
+
+```
+anata a person slowly walking, full shot plain white background
+anata a person saluting, medium shot plain white background
+anata a person boxing, full shot plain white background
+anata a person sitting on the floor plain white background
+anata a person falling with open arms plain white background
+anata a person crossing arms, medium shot plain white background
+anata a person crossing arms, looking away from camera, full shot plain white background
+anata a person dodging to the right, full shot plain white background
+anata a person kneeling, full shot plain white background
+anata a person kneeling, pointing away, full shot plain white background
+anata a person with aiming pose plain white background
+anata a person stranding, greeting plain white background
+anata a person sitting straight with arms on hips plain white background
+anata a person running plain white background
+anata a person running away from viewer plain white background
+anata a person in fight stance, medium shot plain white background
+anata a person in fight stance, cowboy shot plain white background
+anata a person doing a high kick, side view, full shot plain white background
+anata a person kneeling straight, looking at camera plain white background
+anata a person kneeling straight, facing away from camera plain white background
+anata a person flexing muscles, full shot plain white background
+anata a person strut walking, full frame plain white background
+anata a person strut walking away from viewer plain white background
+anata a person throwing a punch plain white background
+anata a person hanging with arms, shot from behind plain white background
+anata a person crawling plain white background
+anata a person doing squats plain white background
+anata a person sitting with leg crossed plain white background
+anata a person in attack stance plain white background
+anata a person with taunting pose plain white background
+anata a person dancing plain white background
+anata a person posing for picture with raised leg plain white background
+anata a person cheering with hands up plain white background
+anata a person walking plain white background
+anata a person posing for picture plain white background
+```
+
 For the rest of the steps, follow this guide: https://hackmd.io/@reneil1337/avatar-lora
 
 ---
