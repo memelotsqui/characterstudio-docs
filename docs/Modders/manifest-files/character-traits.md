@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Setting up this manifest will populate the asset trait section with your own traits that people can select from. It will also serve the character studio for cull trait model options (remove faces underneath) based on the layers, so the triangles disappear underneath the clothing for example.
 
-![](https://hackmd.io/_uploads/By1NZXbhT.jpg)
+![](/img/By1NZXbhT.jpg)
 
 
 ### Example Files

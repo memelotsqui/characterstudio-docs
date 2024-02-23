@@ -14,13 +14,13 @@ This is for the typical usecase of creating your own avatar builder with your tr
 
 > Note: You'll need to generate your own screenshots. I recommend [screenshot-glb](https://github.com/Shopify/screenshot-glb) which works with VRM files as well and keep the base filenames same as the VRM files.
 
-![Screenshot from 2024-02-19 21-15-46](https://hackmd.io/_uploads/BkMdoF-2T.jpg)
+![Screenshot from 2024-02-19 21-15-46](/img/BkMdoF-2T.jpg)
 
 You will need to modify the paths for the templates, it's currently configured for https://github.com/m3-org/loot-assets.
 
 **Here is how the folder structure looks before generating manifest.json**
 
-![image](https://hackmd.io/_uploads/HyonISbnT.png)
+![image](/img/HyonISbnT.png)
 
 This is the script I'm using for generating a manifest for https://github.com/m3-org/loot-assets
 

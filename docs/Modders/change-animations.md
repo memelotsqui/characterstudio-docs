@@ -29,12 +29,12 @@ Pro tip: The first animation file in the list is really important for batch proc
 
 
 Here the avatars are being overrided with an a-pose.fbx animation for previews:
-![](https://i.imgur.com/5erJutX.gif)
+![](/img/5erJutX.gif)
 
 
 2. They're also useful during batch processing since you can load many manifest.json files and then scroll through them while it's playing the default animation. You can use this to catch clipping / weight issues faster:
 
-![](https://i.imgur.com/LbTte4L.gif)
+![](/img/LbTte4L.gif)
 
 
 We're currently using mixamo rigged animations **without skin** to retarget the VRM avatars with. You will want to check the box for `In place` whenever, otherwise your avatar will walk off screen :joy:. Check out the useful links below.
@@ -42,5 +42,5 @@ We're currently using mixamo rigged animations **without skin** to retarget the 
 - https://www.mixamo.com/
 - https://github.com/M3-org/CharacterStudio/tree/main/public/3d/animations
 
-![Screenshot_2024-02-19_21-25-22](https://hackmd.io/_uploads/HJMapKb36.jpg)
+![Screenshot_2024-02-19_21-25-22](/img/HJMapKb36.jpg)
 

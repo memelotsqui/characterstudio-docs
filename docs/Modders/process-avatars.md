@@ -23,7 +23,7 @@ Pro tip: Artists designing traits should always import the rigged base mesh in o
 
 You should first have the [Saturday06 VRM add-on](https://github.com/saturday06/VRM-Addon-for-Blender) downloaded and installed first. Every trait is parented to a VRM armature, of which we are mainly using version VRM 0. Some traits might have additional bones than others, which is why we have every trait parented to their own VRM armatures vs parenting everything to 1 VRM armature.
 
-![](https://hackmd.io/_uploads/SJebjntDeT.jpg)
+![](/img/SJebjntDeT.jpg)
 
 **REMEMBER TO CHANGE EXPORT PATH!**
 
@@ -114,7 +114,7 @@ You can either use the Scripting tab in the blender gui to run it or run it head
 `blender -b -P blender_export.py -- clothing_traits.blend`
 
 
-![](https://hackmd.io/_uploads/Bke-i2YPeT.jpg)
+![](/img/Bke-i2YPeT.jpg)
 
 
 ---
@@ -124,7 +124,7 @@ You can either use the Scripting tab in the blender gui to run it or run it head
 Requirements:
 - https://github.com/vrm-c/UniVRM/
 
-![](https://hackmd.io/_uploads/HkeZs2Kvla.jpg)
+![](/img/HkeZs2Kvla.jpg)
 
 
 

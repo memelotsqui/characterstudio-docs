@@ -6,11 +6,11 @@ sidebar_position: 4
 
 This manifest is inspired by the [VRM to LoRA guide](https://hackmd.io/@reneil1337/avatar-lora) by [reneil1337](https://github.com/reneil1337) will generate training data that can be used for training LoRAs using tools such as [Kohya](https://github.com/bmaltais/kohya_ss).
 
-![](https://hackmd.io/_uploads/H1OJTfb36.jpg)
+![](/img/H1OJTfb36.jpg)
 
 Specifically this part automates the part of gathering screenshots and tagging them from any input VRM file, a time consuming process when done manually. The output will be images + text files like such:
 
-![Screenshot from 2024-02-14 12-17-25](https://hackmd.io/_uploads/SkXX5KWnp.png)
+![Screenshot from 2024-02-14 12-17-25](/img/SkXX5KWnp.png)
 
 For the rest of the steps, follow this guide: https://hackmd.io/@reneil1337/avatar-lora
 

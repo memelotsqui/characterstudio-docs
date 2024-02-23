@@ -6,7 +6,7 @@ sidebar_position: 5
 
 This is an experimental feature for prepopulating and customizing personalities for VRM avatars for AI chatbot application use cases.
 
-![](https://hackmd.io/_uploads/B11GGmZnT.jpg)
+![](/img/B11GGmZnT.jpg)
 
 There's also an ongoing effort to standardize this type of metadata as a gltf extension if interested, see the proposal: https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_personality
 

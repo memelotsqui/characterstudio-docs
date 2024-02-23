@@ -11,7 +11,7 @@ There's a few ways to make an avatar with Character Studio:
 
 The easy way to dress your avatar is to select from the assets that are loaded into the app to mix and match your style, similar to other character creator programs. 
 
-![](https://i.imgur.com/v2zJEiy.gif)
+![](/img/v2zJEiy.gif)
 
 If you want to create your own preloaded asset configuration, check the manifest file documentation to learn more.
 
@@ -34,6 +34,6 @@ Character Studio has the ability to assemble and export VRMs by loading a JSON f
 
 We are exploring ways to read owned assets from a connected wallet in order to configure avatars and wearables programmatically. One idea is to load POAPs and other whitelisted collections as [badges / pins](https://sketchfab.com/3d-models/3d-skill-role-badges-and-pins-e3329ed59b874aad98586657a5f11630) you can attach as wearables for your wearables. 
 
-![](https://i.imgur.com/rFV2t9G.png)
+![](/img/rFV2t9G.png)
 
 If you want to learn more about how to configure avatars programmatically or want to create a VRM collection then I suggest to join the [M3 discord](https://m3org.com/discord) and make a quick introduction. If you're a technical person you may want to look into documentation on the manifest files we're using, and should also join the discord to discuss this method of assembling avatars.
