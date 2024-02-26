@@ -1,31 +1,49 @@
 # Appearance
 
-The `Appearance` component is a part of a larger React application. It's responsible for handling the appearance settings of a character in a 3D modeling or animation application. This component provides a user interface for loading and manipulating 3D models, animations, and textures.
+To Access this menu, go to `Create Character` menu button, then select any option displayed there.
 
-In layman's terms, this component is like a control panel for a character in a video game or animation. It allows you to load different character models, animations, and textures, and provides buttons to perform various actions like moving to the next step, going back, randomizing the character's appearance, and entering debug mode.
+***Important:*** if no option is present in this menu, you need to setup `character manifest.json` to point were to fetch manifest options.
 
-**Import Statements**
+**Summary**
 
-The component begins with a series of import statements, which bring in various dependencies and other components that are used within the `Appearance` component.
-Function Definition
+The `Appearance` component, allows you to load and select different character traits (models), animations, and textures, as well as entering debug mode and fine tune details on your avatar. It provides buttons based on a pre-defined `character-manifest` to dress-up and customize your character.
 
-The `Appearance` function is the main component function. It takes several props, which are parameters passed from a parent component. These props include various managers (`animationManager`, `blinkManager`, `lookatManager`, `effectManager`) and a `confirmDialog` function.
+**Logic**
 
-**Contexts**
+For this component, we want the user to be able to access the `characterManager` functions by providing ui buttons to select trait models or textures, play animations, and set culling layers for selected character.
 
-The component uses several React Contexts, which are a way of passing data through the component tree without having to pass props down manually at every level. These contexts provide various pieces of data and functions that are used throughout the component.
-State Variables
+**Select character functions**
 
-The component defines several state variables using the `useState` hook. These variables store the current state of the component and provide functions to update that state.
-Event Listeners
+- `randomize`: From loaded manifest, load a set of random traits (the traits that will be randomized are defined in the loaded manifest)
 
-The `useEffect` hook is used to add and remove event listeners to the `effectManager`. These listeners trigger a function when certain events occur.
-Translation Hook
+- `handleColorChange` `handleChangeComplete`: Change the color of current selected trait
 
-The `useContext(LanguageContext)` hook is used to provide a translation function `t` that can be used to display text in different languages.
-File Handling Functions
+- `clickDebugMode`: Display debug mode in the main window
 
-There are several functions (`handleAnimationDrop`, `handleImageDrop`, `handleVRMDrop`, `handleFilesDrop`) that handle different types of files when they are dropped onto the component. These functions read the files, create URLs for them, and update the state variables accordingly.
-Render
+- `selectTrait`: Select a trait from the displayed options and load it into the character
 
-The `return` statement defines the JSX that will be rendered by the component. This includes a loading indicator, a title, a file drop component, an editor component, and several buttons. The buttons have various functions attached to their `onClick` events, which trigger when the buttons are clicked.
+- `removeTrait`: Remove the current selected trait.
+
+- `randomTrait`: Get a Random trait from current selected trait.
+
+- `selectTraitGroup`: Change currently displayed trait options to selected trait group.
+
+**Drag and drop functions**
+
+- `handleFilesDrop` User dropped a file, detect what type it was:
+
+- `handleAnimationDrop`: User dropped an animation, play it on the current character traits
+
+- `handleImageDrop`: User dropped an image, apply it to the current selected Trait (works only if there is currently a selected trait)
+
+- `handleVRMDrop`: User dropped a vrm file, load it as custom on current selected Trait (works only if there is currently a selected trait)
+
+- `handleJsonDrop`: User dropped a json file, consider it as an nft json specification file and load all traits included in this file.
+
+- `uploadTrait`: Actually load the vrm file that was drag and dropped by the user.
+
+**Utils functions**
+
+- `back`: Go back to manifest selection page.
+
+- `next`: Go to download page.
