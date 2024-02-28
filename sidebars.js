@@ -43,6 +43,18 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Contexts',
+          collapsed: true,
+          items: [
+            'Developers/Contexts/scene-context',
+            'Developers/Contexts/view-context',
+            'Developers/Contexts/sound-context',
+            'Developers/Contexts/audio-context',
+            'Developers/Contexts/language-context',
+          ]
+        },
+        {
+          type: 'category',
           label: 'Pages',
           collapsed: true,
           items: [
@@ -57,8 +69,8 @@ const sidebars = {
             'Developers/Pages/mint',
             'Developers/Pages/optimizer',
             'Developers/Pages/save',
-            'Developers/Pages/view',
             'Developers/Pages/wallet',
+            'Developers/Pages/view',
           ]
         },
         'Developers/sdk',
