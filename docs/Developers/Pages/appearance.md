@@ -2,7 +2,7 @@
 
 To Access this menu, go to `Create Character` menu button, then select any option displayed there.
 
-***Important:*** if no option is present in this menu, you need to setup `character manifest.json` to point were to fetch manifest options.
+***Important:*** if no option is present in this menu, you need to setup `VITE_ASSET_PATH` in the `.env` file, to point to `character manifest.json` location, and point were to fetch manifest options.
 
 **Summary**
 

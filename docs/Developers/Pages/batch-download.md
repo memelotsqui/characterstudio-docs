@@ -2,7 +2,7 @@
 
 To Access this menu, go to `Batch Download` button, then select any other option than is not `Manifest - Load by manifest`
 
-***Important:*** if only `Manifest - Load by manifest` option is present and there are no additional options, you need to setup `character manifest.json` to point were to fetch manifest options.
+***Important:*** if only `Manifest - Load by manifest` option is present and there are no additional options, you need to setup `VITE_ASSET_PATH` in the `.env` file, to point to `character manifest.json` location, and point were to fetch manifest options.
 
 **Summary**
 
