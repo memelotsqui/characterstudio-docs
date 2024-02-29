@@ -14,7 +14,7 @@ Scene Context allows easy access to app managers and scene elements. All the log
 - `spriteAtlasGenerator` allows access to functions to create sprites, spritesheets and gifs with a given manifest or directly providing the required parameters for the functions.
 
 
-**Scene**
+**Scene Functions**
 
 - `sceneElements` all elements that are **not** part of the current selected character. Cane be displayed or hidden with `showEnvironmentModels(display)` function
 
