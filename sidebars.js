@@ -37,10 +37,26 @@ const sidebars = {
         },
       ]
     },
+    
     {
       type: 'category',
       label: 'Developers',
       items: [
+        'Developers/overview',
+        {
+          type: 'category',
+          label: 'Managers',
+          collapsed: true,
+          items: [
+            'Developers/Managers/character-manager',
+            'Developers/Managers/animation-manager',
+            'Developers/Managers/look-at-manager',
+            'Developers/Managers/blink-manager',
+            'Developers/Managers/screenshot-manager',
+            'Developers/Managers/lora-data-generator',
+            'Developers/Managers/sprite-atlas-generator',
+          ]
+        },
         {
           type: 'category',
           label: 'Contexts',
@@ -58,19 +74,23 @@ const sidebars = {
           label: 'Pages',
           collapsed: true,
           items: [
+            'Developers/Pages/landing',
+            'Developers/Pages/create',
             'Developers/Pages/appearance',
+            'Developers/Pages/bio',
+            'Developers/Pages/view',
+            'Developers/Pages/mint',
+            'Developers/Pages/save',
+            'Developers/Pages/load',
+
+            'Developers/Pages/claim',
             'Developers/Pages/batch-download',
             'Developers/Pages/batch-manifest',
-            'Developers/Pages/bio',
-            'Developers/Pages/claim',
-            'Developers/Pages/create',
-            'Developers/Pages/landing',
-            'Developers/Pages/load',
-            'Developers/Pages/mint',
+
             'Developers/Pages/optimizer',
-            'Developers/Pages/save',
+            
             'Developers/Pages/wallet',
-            'Developers/Pages/view',
+            
           ]
         },
         'Developers/sdk',

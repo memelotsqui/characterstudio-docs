@@ -1,28 +1,28 @@
 # View Context
 
-Allows navigation within the app and current active page. Viwmode just defines which page is currently active:
+Allows navigation within the app and current active page. Viewmode just defines which page is currently active:
 
-- `LANDING`: Iinitial Landing page with menu selection.
+- [Landing](../Pages/landing.md): Iinitial Landing page with menu selection.
 
-- `CREATE`: Character selection page.
+- [Create](../Pages/create.md): Character selection page.
 
-- `CLAIM`: Type of batch downlaod selection page.
+- [Claim](../Pages/claim.md): Type of batch downlaod selection page.
 
-- `LOAD`: Load created character selection page.
+- [Load](../Pages/load.md): Load created character selection page.
 
-- `APPEARANCE`: Character dress up and customization page.
+- [Appearance](../Pages/appearance.md): Character dress up and customization page.
 
-- `BATCHDOWNLOAD`: Page to download with NFT json traits.
+- [Batch Download](../Pages/batch-download.md): Page to download with NFT json traits.
 
-- `BATCHMANIFEST`: Page to download with manifest.
+- [Batch Manifest](../Pages/batch-manifest.md): Page to download with manifest.
 
-- `BIO`: Character Bio description page.
+- [Bio](../Pages/bio.md): Character Bio description page.
 
-- `CHAT`: Chat with created character page.
+- [Chat](../Pages/view.md): Chat with created character page.
 
-- `OPTIMIZER`: Optimize existing VRM page.
+- [Optimizer](../Pages/optimizer.md): Optimize existing VRM page.
 
-- `WALLET`: Menu after connecting wallet Page.
+- [Wallet](../Pages/wallet.md): Menu after connecting wallet Page.
 
 
 **Functions**

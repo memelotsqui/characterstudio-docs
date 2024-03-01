@@ -1,0 +1,3 @@
+# Sprite Atlas Generator
+
+WIP
