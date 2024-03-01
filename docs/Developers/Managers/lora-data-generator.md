@@ -28,7 +28,7 @@ The `LoRaDataGenerator` class is responsible for generating LoRa data based on t
 
 #### Methods
 
-### createLoraData(manifestURL, baseText)
+### `createLoraData(manifestURL, baseText)`
 
 Creates LoRa data based on the specified manifest file.
 
