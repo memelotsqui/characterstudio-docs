@@ -27,3 +27,7 @@ Pages provide a way to segment different menus and options to choose from the ch
 ### Components
 
 Components mainly serve as menus within pages, they can either be simple buttons, or full menus that fetch their actions from `characterManager` class, accessed by scene context.
+
+#### This is a basic overview of how the app is currently working
+
+![](/img/overview-app.jpg)
