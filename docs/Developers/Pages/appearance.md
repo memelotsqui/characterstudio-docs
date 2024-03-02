@@ -6,7 +6,7 @@ To Access this menu, go to `Create Character` menu button, then select any optio
 
 **Summary**
 
-The `Appearance` component, allows you to load and select different character traits (models), animations, and textures, as well as entering debug mode and fine tune details on your avatar. It provides buttons based on a pre-defined `character-manifest` to dress-up and customize your character.
+The `Appearance` page, allows you to load and select different character traits (models), animations, and textures, as well as entering debug mode and fine tune details on your avatar. It provides buttons based on a pre-defined `character-manifest` to dress-up and customize your character.
 
 **Logic**
 

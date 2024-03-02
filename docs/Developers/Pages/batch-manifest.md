@@ -16,25 +16,6 @@ The user can batch the process to download a preview image with the `initialTrai
 *Important note* 
 If multiple images/files are not being downloaded, browser might not support/allow this feature. Please switch to a web browser that support this feature (Chrome), or allow it on your current browser
 
-**Import Statements**
-
-```jsx
-import React, { useContext, useEffect, useState } from "react"
-import styles from "./Optimizer.module.css"
-import { ViewMode, ViewContext } from "../context/ViewContext"
-import { SceneContext } from "../context/SceneContext"
-import CustomButton from "../components/custom-button"
-import { LanguageContext } from "../context/LanguageContext"
-import { SoundContext } from "../context/SoundContext"
-import { AudioContext } from "../context/AudioContext"
-import FileDropComponent from "../components/FileDropComponent"
-import { getFileNameWithoutExtension, disposeVRM, getAtlasSize } from "../library/utils"
-import JsonAttributes from "../components/JsonAttributes"
-import ModelInformation from "../components/ModelInformation"
-import MergeOptions from "../components/MergeOptions"
-import { local } from "../library/store"
-```
-
 **Logic**
 
 For this component we want the user to be able to drag and drop a file with `FileDropComponent` and detect wether the user dropped Manifest file (.json), animation file (.fbx) or .vrm file to start the batch download process accodrdingly.
