@@ -24,7 +24,7 @@ Properties for `Sprite Atlas Generator` are not meant to be edited directly, the
 
   The blink manager used for managing blinking animations.
 
-- `.animationManager: Object**`
+- `.yarnanimationManager: Object**`
 
   The animation manager used for loading and managing animations.
 
