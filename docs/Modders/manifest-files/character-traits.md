@@ -96,14 +96,14 @@ Character studio will search on root directory + each animation path:
 
 ```./character-assets/animations/idle.fbx```
 
-### exportScale
+### displayScale
 *optional number*
 
-Default export scale value for character when downloading and previewing, default is 1
+Default display scale value for character when previewing in 3d view, final model will not have this scale, default is 1
 
 Example:
 ```json
-"exportScale":0.7
+"displayScale":0.7
 ```
 
 ### requiredTraits
@@ -225,6 +225,142 @@ Example:
 ```json
 "offset":[0.0,0.1,0.0]
 ```
+
+___
+
+## download options
+*optional object data*
+
+Includes export download options for final downloaded 3d model.
+
+```json
+"downloadOptions":{
+    
+    ...(options from below)
+}
+```
+
+### scale
+*optional number*
+
+Default export scale value for character when downloading, default is 1
+
+Example:
+```json
+"scale":0.7
+```
+
+### exportStdAtlas
+*optional boolean*
+
+should final model export standard material? default is False
+
+Example:
+```json
+"exportStdAtlas":true
+```
+
+### exportMtoonAtlas
+*optional boolean*
+
+should final model export mToon material? default is True
+
+Example:
+```json
+"exportMtoonAtlas":true
+```
+
+### mToonAtlasSize
+*optional number*
+
+Atlas size for final mToon atlas download image, default is 2048 (use square numbers)
+
+Example:
+```json
+"mToonAtlasSize":4096
+```
+
+
+### mToonAtlasSizeTransp
+*optional number*
+
+Atlas size for final transparent mToon atlas download image, default is 2048 (use square numbers)
+
+Example:
+```json
+"mToonAtlasSizeTransp":4096
+```
+
+### stdAtlasSize
+*optional number*
+
+Atlas size for final standard atlas material download image, default is 2048 (use square numbers)
+
+Example:
+```json
+"stdAtlasSize":4096
+```
+
+### stdAtlasSizeTransp
+*optional number*
+
+Atlas size for final transparent standard atlas material download image, default is 2048 (use square numbers)
+
+Example:
+```json
+"stdAtlasSizeTransp":4096
+```
+
+
+### screenshotFaceDistance
+*optional number*
+
+Distance the camera will take a portrait screenshot for portrait image, default is 1
+
+Example:
+```json
+"screenshotFaceDistance":0.8
+```
+
+### screenshotFaceOffset
+*optional array[3] number*
+
+Set an offset value (x,y,z) to the camera face screenshot.
+
+Example:
+```json
+"screenshotFaceOffset":[0,0.1,0]
+```
+### screenshotResolution
+*optional array[2] number*
+
+Set the resolution of final portrait image of downloaded vrm, default is [512,512] (use square numbers)
+
+Example:
+```json
+"screenshotResolution":[256,256]
+```
+### screenshotBackground
+*optional array[3] number*
+
+Sets a background color for the portrait image (rgb). values are from 0 to 1. default is [0.1,0.1,0.1]
+
+Example:
+```json
+"screenshotBackground":[0.8,0.8,0.8]
+```
+### screenshotFOV
+*optional number*
+
+Set camera FOV for vrm portrait screenshot. Default is 75.
+
+Example:
+```json
+"screenshotFOV":80
+```
+
+
+
 ### vrmMeta
 *optional object data*
 
@@ -246,6 +382,7 @@ Example:
     "modification":"prohibited"
 }
 ```
+
 ___
 
 ## Trait Group Section (traits)
