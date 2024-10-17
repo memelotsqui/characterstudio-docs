@@ -549,7 +549,7 @@ Note that we currently treat every blendshape trait (those defined in the manife
 ]
 ```
 
-A BlendshapeTrait Group definition has the following traits:
+A BlendshapeTrait Group definition has the following properties:
 
 **trait *(string)***: Group id of the blendshape group.
 
