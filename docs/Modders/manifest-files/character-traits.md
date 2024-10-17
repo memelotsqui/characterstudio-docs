@@ -522,7 +522,7 @@ Example:
 ]
 ```
 
-**blendshapeTraits *(optional Object[])***: An array of Blendshape Trait definition. Let's you define blendshapes as traits. These traits will be removed at export stage.
+**blendshapeTraits *(optional Object[])***: An array of Blendshape Trait definition. Let's you define blendshapes as traits. These blendshapes will be removed at export stage.
 Note that we currently treat every blendshape trait (those defined in the manifest) as binary. I.e. they're either on or off.
 
 ```json
