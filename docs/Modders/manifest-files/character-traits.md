@@ -522,6 +522,52 @@ Example:
 ]
 ```
 
+**blendshapeTraits *(optional Object[])***: An array of Blendshape Trait definition. Let's you define blendshapes as traits. These blendshapes will be removed at export stage.
+Note that we currently treat every blendshape trait (those defined in the manifest) as binary. I.e. they're either on or off.
+
+```json
+...
+"collection": [
+  {
+    "id": "male",
+    "name": "male",
+    "directory": "Body/male.vrm",
+    "thumbnail": "Body/male.png",
+    "blendshapeTraits":[{      < ---------------
+      "trait":"nose",
+      "name":"Nose",
+      "cameraTarget": {
+        "distance": 0.75,
+        "height": 1.5
+      },
+      "collection":[{
+        "id":"Nose_LONG",
+        "name":"Long Nose"
+      }]
+    }]
+  }
+]
+```
+
+A BlendshapeTrait Group definition has the following properties:
+
+**trait *(string)***: Group id of the blendshape group.
+
+**name *(string)***: Name of the blendshape group.
+
+**cameraTarget *(optional Object)***: Define distance and height of the blendshape group.
+
+**collection *( Array of Object)***: The Array of Blendshape traits, defined below.
+
+> **id *(string)***: ID of the blendshape, this also has to be the exact blendshape name (case-sensitive)
+>
+> **name *(string)***: Name of the trait.
+>
+> **fullThumbnail *(optional string)***: Path to the thumbnail of that blendshape trait.
+
+
+
+
 ___
 
 ## Texture Collection Section (textureCollections):
