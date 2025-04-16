@@ -6,7 +6,7 @@ toc_min_heading_level: 2
 # About
 
 
-An evolving and truely open 3D studio for making and optimizing VRM avatars and/or create a customized avatar builder app using your own assets.
+An evolving and truely open 3D studio for making and optimizing VRM avatars and/or create a customized avatar builder app using your own assets. 
 
 
 ![](/img/v2zJEiy.gif)
