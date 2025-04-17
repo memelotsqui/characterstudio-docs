@@ -26,6 +26,7 @@ const sidebars = {
           type: 'category',
           label: 'Manifest Files',
           items: [
+            'Modders/manifest-files/getting-started',
             'Modders/manifest-files/overview',
             'Modders/manifest-files/character-select',
             'Modders/manifest-files/character-traits',
