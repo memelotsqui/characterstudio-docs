@@ -148,7 +148,7 @@ Add clothing and hair traits following the same pattern:
 
 ### Step 6: Add Colors and Textures
 
-Add color options for hair and skin:
+Add color, texture and decal options
 
 ```json
 "colorCollections": [
@@ -170,7 +170,7 @@ Add color options for hair and skin:
 ],
 "textureCollections": [
   {
-    "trait": "SKIN_TONES",
+    "trait": "CLOTH_COLORS",
     "collection": [
       {
         "id": "LIGHT",
@@ -186,14 +186,164 @@ Add color options for hair and skin:
       }
     ]
   }
+],
+"decalCollections": [
+  {
+    "trait": "TATTOOS",
+    "collection": [
+      {
+        "id": "TATTOO",
+        "name": "tattoo",
+        "directory": "decals/tattoo.png",
+        "thumbnail": "decals/tattoo.png"
+      },
+      {
+        "id": "TATTOO_2",
+        "name": "tattoo 2",
+        "directory": "decals/tattoo_2.png",
+        "thumbnail": "decals/tattoo_2.png"
+      }
+    ]
+  }
 ]
 ```
+### Step 7: Connect to model traits
 
-### Step 7: Save and Test
+Go back to traits and connect decals to desired trait model, example:
+```json
+{
+  "id": "FEMALE",
+  "name": "Female",
+  "directory": "BODY/female.vrm",
+  "thumbnail": "BODY/female.png",
+  "textureCollection":"SKIN_TONES",
+  "decalCollection":"TATTOOS"
+}
+...
+{
+  "id": "DRESS",
+  "name": "Dress",
+  "directory": "CLOTHING/dress.vrm",
+  "thumbnail": "CLOTHING/dress.png",
+  "colorCollection":"CLOTH_COLORS",
+}
+
+```
+
+### Step 8: Save and Test
 
 1. Save your `manifest.json` file
 2. Place it in your `character-assets` folder
 3. Load it in Character Studio to test
+
+## Adding Your Collection to Character Studio
+
+Now that you've created your character collection manifest, you need to add it to the main manifest file that Character Studio uses to load all available collections.
+
+### Step 1: Find the Main Manifest File
+
+The main manifest file is located at:
+```
+CharacterStudio/public/manifest.json
+```
+
+### Step 2: Add Your Collection
+
+Open the main manifest file and add your collection to the `collections` array. Here's an example:
+
+```json
+{
+  "characters":[
+    {
+      "id": "your-collection",
+      "name": "Your Collection Name",
+      "description": "A brief description of your collection",
+      "thumbnail": "your-collection/thumbnail.png",
+      "manifest": "your-collection/manifest.json",
+      "authors": ["Your Name"],
+      "version": "1.0"
+    }
+  ]
+}
+```
+
+### Step 3: Required Fields
+
+- `id`: A unique identifier for your collection (use lowercase, no spaces)
+- `name`: The display name of your collection
+- `description`: A brief description of what's in your collection
+- `thumbnail`: Path to your collection's thumbnail image
+- `manifest`: Path to your collection's manifest file
+- `authors`: Array of author names
+- `version`: Version number of your collection
+
+### Step 4: Example with Multiple Collections
+
+Here's how the main manifest might look with multiple collections:
+
+```json
+{
+  "collections": [
+    {
+      "id": "other-collection",
+      "name": "Other Collection",
+      "description": "A collection of anime-style characters",
+      "thumbnail": "other/thumbnail.png",
+      "manifest": "other/manifest.json",
+      "authors": ["Artist Name"],
+      "version": "1.0"
+    },
+    {
+      "id": "your-collection",
+      "name": "Your Collection Name",
+      "description": "A brief description of your collection",
+      "thumbnail": "your-collection/thumbnail.png",
+      "manifest": "your-collection/manifest.json",
+      "authors": ["Your Name"],
+      "version": "1.0"
+    }
+  ]
+}
+```
+
+## Additional Manifest Sections
+
+The main manifest file (`CharacterStudio/public/manifest.json`) can include several optional sections that provide additional functionality for all character collections:
+
+### 1. LoRAs (Low-Rank Adaptations)
+This section defines how to capture images for training AI models with your characters. It includes:
+- Camera angles and positions
+- Lighting setups
+- Background requirements
+- Image resolution and format specifications
+
+For more details, see the [LoRA Documentation](./vrm-to-lora.md).
+
+### 2. Sprites
+This section defines how to generate sprite sheets from your 3D characters. It includes:
+- Animation sequences to capture
+- Camera settings for each pose
+- Output format and resolution
+- Background and lighting requirements
+
+For more details, see the [Sprite Sheet Documentation](./vrm-to-spritesheet.md).
+
+### 3. Thumbnails
+This section defines how to generate thumbnails for your character assets. It includes:
+- Camera positions for different trait types
+- Lighting setups
+- Background colors
+- Output resolution and format
+
+For more details, see the [Thumbnail Documentation](./character-traits.md#thumbnailsdirectory).
+
+### 4. Default Animations
+This section provides a set of default animations that can be used by all character collections. It includes:
+- Common animation sequences (idle, walk, run, etc.)
+- Animation file locations
+- Animation descriptions and usage notes
+
+For more details, see the [Animation Documentation](./character-traits.md#animationpath).
 
 ## Tips for Artists
 
@@ -235,11 +385,18 @@ Add color options for hair and skin:
 - Check if the color values are in the correct format (#RRGGBB)
 - Verify that the trait IDs match between traits and color collections
 
+### Collection doesn't appear in Character Studio
+- Make sure your collection is properly added to the main manifest file
+- Verify that all paths in the main manifest are correct
+- Check that your collection's manifest file is in the right location
+
 ## Next Steps
 
 1. Test your manifest with a few basic traits
 2. Add more options to each category
 3. Experiment with different culling layers
 4. Add more color and texture options
+5. Add your collection to the main manifest file
+6. Explore additional manifest sections for LoRAs, sprites, and animations
 
 For more detailed information about each field, refer to the [Character Traits Documentation](./character-traits.md). 
