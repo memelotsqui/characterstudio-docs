@@ -317,7 +317,7 @@ This section defines how to capture images for training AI models with your char
 - Background requirements
 - Image resolution and format specifications
 
-For more details, see the [LoRA Documentation](./vrm-to-lora.md).
+For more details, see the [LoRA Documentation](./manifest-files/vrm-to-lora.md).
 
 ### 2. Sprites
 This section defines how to generate sprite sheets from your 3D characters. It includes:
@@ -326,7 +326,7 @@ This section defines how to generate sprite sheets from your 3D characters. It i
 - Output format and resolution
 - Background and lighting requirements
 
-For more details, see the [Sprite Sheet Documentation](./vrm-to-spritesheet.md).
+For more details, see the [Sprite Sheet Documentation](./manifest-files/vrm-to-spritesheet.md).
 
 ### 3. Thumbnails
 This section defines how to generate thumbnails for your character assets. It includes:
@@ -335,7 +335,7 @@ This section defines how to generate thumbnails for your character assets. It in
 - Background colors
 - Output resolution and format
 
-For more details, see the [Thumbnail Documentation](./character-traits.md#thumbnailsdirectory).
+For more details, see the [Thumbnail Documentation](./manifest-files/vrm-to-thumbnails).
 
 ### 4. Default Animations
 This section provides a set of default animations that can be used by all character collections. It includes:
